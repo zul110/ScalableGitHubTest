@@ -11,6 +11,10 @@ import UIKit
 extension ViewController: ViewModelDelegate {
     func didGetDataSuccessfully() {
         print(self.reposVM.repos)
+        
+        let commitsVM = CommitsViewModel(self.reposVM.repos[0].name!)
+        // Just testing...
+        commitsVM.delegate = self
     }
     
     func didFailGettingData(_ error: ErrorModel) {

@@ -30,6 +30,7 @@
 		B7595AE320AE653300972E1F /* RealmManager_ReposViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE220AE653300972E1F /* RealmManager_ReposViewModelExtension.swift */; };
 		B7595AE520AE656F00972E1F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE420AE656F00972E1F /* API.swift */; };
 		B7595AE720AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE620AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift */; };
+		B7595AEA20AE672C00972E1F /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE920AE672C00972E1F /* CommitsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		B7595AE220AE653300972E1F /* RealmManager_ReposViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager_ReposViewModelExtension.swift; sourceTree = "<group>"; };
 		B7595AE420AE656F00972E1F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B7595AE620AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModelDelegate_MainViewModelExtension.swift; sourceTree = "<group>"; };
+		B7595AE920AE672C00972E1F /* CommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
 		D1654A794E8A8143CD7A977B /* Pods-ScalableGitHubTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8A9ABC37D6915F986FE112 /* Pods-ScalableGitHubTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +139,7 @@
 		B7595ABC20AE5BC500972E1F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B7595AE820AE671D00972E1F /* CommitsViewModel */,
 				B7595AC420AE5D9B00972E1F /* ReposViewModel */,
 				B7595AC220AE5D9800972E1F /* BaseViewModel.swift */,
 			);
@@ -225,6 +228,22 @@
 				B7595AE020AE5F3400972E1F /* ErrorTypeEnum.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		B7595AE820AE671D00972E1F /* CommitsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B7595AEB20AE672F00972E1F /* Extensions */,
+				B7595AE920AE672C00972E1F /* CommitsViewModel.swift */,
+			);
+			path = CommitsViewModel;
+			sourceTree = "<group>";
+		};
+		B7595AEB20AE672F00972E1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7595ADE20AE5E3D00972E1F /* ErrorModel.swift in Sources */,
+				B7595AEA20AE672C00972E1F /* CommitsViewModel.swift in Sources */,
 				B7595AD220AE5DF900972E1F /* CommitModel.swift in Sources */,
 				B7595AC620AE5DA900972E1F /* ReposViewModel.swift in Sources */,
 				B7595AE320AE653300972E1F /* RealmManager_ReposViewModelExtension.swift in Sources */,
