@@ -27,6 +27,9 @@
 		B7595ADC20AE5E3200972E1F /* TreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595ADB20AE5E3200972E1F /* TreeModel.swift */; };
 		B7595ADE20AE5E3D00972E1F /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595ADD20AE5E3D00972E1F /* ErrorModel.swift */; };
 		B7595AE120AE5F3400972E1F /* ErrorTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE020AE5F3400972E1F /* ErrorTypeEnum.swift */; };
+		B7595AE320AE653300972E1F /* RealmManager_ReposViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE220AE653300972E1F /* RealmManager_ReposViewModelExtension.swift */; };
+		B7595AE520AE656F00972E1F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE420AE656F00972E1F /* API.swift */; };
+		B7595AE720AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE620AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		B7595ADB20AE5E3200972E1F /* TreeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeModel.swift; sourceTree = "<group>"; };
 		B7595ADD20AE5E3D00972E1F /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		B7595AE020AE5F3400972E1F /* ErrorTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypeEnum.swift; sourceTree = "<group>"; };
+		B7595AE220AE653300972E1F /* RealmManager_ReposViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager_ReposViewModelExtension.swift; sourceTree = "<group>"; };
+		B7595AE420AE656F00972E1F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B7595AE620AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModelDelegate_MainViewModelExtension.swift; sourceTree = "<group>"; };
 		D1654A794E8A8143CD7A977B /* Pods-ScalableGitHubTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8A9ABC37D6915F986FE112 /* Pods-ScalableGitHubTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				B7595ADF20AE5F2500972E1F /* Enums */,
+				B7595AE420AE656F00972E1F /* API.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 		B7595AC120AE5D7300972E1F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B7595AE620AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +207,7 @@
 		B7595AC720AE5DAB00972E1F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B7595AE220AE653300972E1F /* RealmManager_ReposViewModelExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -335,6 +344,7 @@
 				B7595ADE20AE5E3D00972E1F /* ErrorModel.swift in Sources */,
 				B7595AD220AE5DF900972E1F /* CommitModel.swift in Sources */,
 				B7595AC620AE5DA900972E1F /* ReposViewModel.swift in Sources */,
+				B7595AE320AE653300972E1F /* RealmManager_ReposViewModelExtension.swift in Sources */,
 				B7595AAB20AE5B7A00972E1F /* MainViewController.swift in Sources */,
 				B7595AD820AE5E1C00972E1F /* CommitAuthorModel.swift in Sources */,
 				B7595AA920AE5B7A00972E1F /* AppDelegate.swift in Sources */,
@@ -347,7 +357,9 @@
 				B7595ADC20AE5E3200972E1F /* TreeModel.swift in Sources */,
 				B7595ADA20AE5E2800972E1F /* VerificationModel.swift in Sources */,
 				B7595AC320AE5D9800972E1F /* BaseViewModel.swift in Sources */,
+				B7595AE520AE656F00972E1F /* API.swift in Sources */,
 				B7595AE120AE5F3400972E1F /* ErrorTypeEnum.swift in Sources */,
+				B7595AE720AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
