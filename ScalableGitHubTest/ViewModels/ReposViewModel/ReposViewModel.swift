@@ -82,6 +82,8 @@ class ReposViewModel: BaseViewModel {
     }
     
     override func displayData() {
-        print((self.repos[0].owner?.login)!)
+        DispatchQueue.main.async {
+            print((self.repos[0].owner?.login)!)
+        }
     }
 }

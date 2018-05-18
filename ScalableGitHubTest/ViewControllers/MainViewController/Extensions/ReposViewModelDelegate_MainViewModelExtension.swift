@@ -10,11 +10,16 @@ import UIKit
 
 extension ViewController: ViewModelDelegate {
     func didGetDataSuccessfully() {
-        print(self.reposVM.repos)
-        
-        let commitsVM = CommitsViewModel(self.reposVM.repos[0].name!)
-        // Just testing...
-        commitsVM.delegate = self
+        DispatchQueue.main.async {
+            //print(self.reposVM.repos)
+            
+            self.reposTableView.dataSource = self
+            self.reposTableView.delegate = self
+            
+            self.reposTableView.reloadData()
+            
+            self.activityIndicator.isHidden = true
+        }
     }
     
     func didFailGettingData(_ error: ErrorModel) {

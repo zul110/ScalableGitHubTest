@@ -31,6 +31,8 @@
 		B7595AE520AE656F00972E1F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE420AE656F00972E1F /* API.swift */; };
 		B7595AE720AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE620AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift */; };
 		B7595AEA20AE672C00972E1F /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE920AE672C00972E1F /* CommitsViewModel.swift */; };
+		B7595AED20AE69CA00972E1F /* RefreshControl_MainViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AEC20AE69CA00972E1F /* RefreshControl_MainViewControllerExtension.swift */; };
+		B7595AEF20AE6A1800972E1F /* TableViewDelegate+DataSource_MainViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AEE20AE6A1800972E1F /* TableViewDelegate+DataSource_MainViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		B7595AE420AE656F00972E1F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B7595AE620AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModelDelegate_MainViewModelExtension.swift; sourceTree = "<group>"; };
 		B7595AE920AE672C00972E1F /* CommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
+		B7595AEC20AE69CA00972E1F /* RefreshControl_MainViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshControl_MainViewControllerExtension.swift; sourceTree = "<group>"; };
+		B7595AEE20AE6A1800972E1F /* TableViewDelegate+DataSource_MainViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDelegate+DataSource_MainViewControllerExtension.swift"; sourceTree = "<group>"; };
 		D1654A794E8A8143CD7A977B /* Pods-ScalableGitHubTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8A9ABC37D6915F986FE112 /* Pods-ScalableGitHubTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +198,8 @@
 			isa = PBXGroup;
 			children = (
 				B7595AE620AE660700972E1F /* ReposViewModelDelegate_MainViewModelExtension.swift */,
+				B7595AEC20AE69CA00972E1F /* RefreshControl_MainViewControllerExtension.swift */,
+				B7595AEE20AE6A1800972E1F /* TableViewDelegate+DataSource_MainViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -362,6 +368,7 @@
 			files = (
 				B7595ADE20AE5E3D00972E1F /* ErrorModel.swift in Sources */,
 				B7595AEA20AE672C00972E1F /* CommitsViewModel.swift in Sources */,
+				B7595AED20AE69CA00972E1F /* RefreshControl_MainViewControllerExtension.swift in Sources */,
 				B7595AD220AE5DF900972E1F /* CommitModel.swift in Sources */,
 				B7595AC620AE5DA900972E1F /* ReposViewModel.swift in Sources */,
 				B7595AE320AE653300972E1F /* RealmManager_ReposViewModelExtension.swift in Sources */,
@@ -370,6 +377,7 @@
 				B7595AA920AE5B7A00972E1F /* AppDelegate.swift in Sources */,
 				B7595AD620AE5E0F00972E1F /* ParentModel.swift in Sources */,
 				B7595ACC20AE5DD600972E1F /* OwnerModel.swift in Sources */,
+				B7595AEF20AE6A1800972E1F /* TableViewDelegate+DataSource_MainViewControllerExtension.swift in Sources */,
 				B7595AD020AE5DF000972E1F /* CommitDataModel.swift in Sources */,
 				B7595AD420AE5E0500972E1F /* AuthorModel.swift in Sources */,
 				B7595ACA20AE5DC600972E1F /* RepoModel.swift in Sources */,

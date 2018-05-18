@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var reposTableView: UITableView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
+    let refreshControl = UIRefreshControl()
+    
     var reposVM: ReposViewModel!
     
     override func viewDidLoad() {
@@ -17,6 +22,8 @@ class ViewController: UIViewController {
         self.reposVM = ReposViewModel()
         self.reposVM.delegate = self
         self.reposVM.getData()
+        
+        self.addRefreshControlToTableView()
     }
 }
 
