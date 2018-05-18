@@ -10,7 +10,9 @@ import Foundation
 import Realm
 import RealmSwift
 
+// ReposViewModel extension for Realm operations
 extension ReposViewModel {
+    // Configure Realm
     func configureRealm() {
         let config = RLMRealmConfiguration.default()
         config.schemaVersion = 1
@@ -22,6 +24,7 @@ extension ReposViewModel {
         RLMRealmConfiguration.setDefault(config)
     }
     
+    // Initiate Realm objects
     func setupPersistentRepos() {
         DispatchQueue.main.async {
             guard let realm = try? Realm() else {
@@ -32,6 +35,7 @@ extension ReposViewModel {
         }
     }
     
+    // Delete data from repos Realm
     func deletePersistentRepos() {
         DispatchQueue.main.async {
             guard let realm = try? Realm() else {
@@ -50,6 +54,7 @@ extension ReposViewModel {
         }
     }
     
+    // Acquire new data via network call
     func updatePersistentRepos() {
         self.deletePersistentRepos()
         self.getData()

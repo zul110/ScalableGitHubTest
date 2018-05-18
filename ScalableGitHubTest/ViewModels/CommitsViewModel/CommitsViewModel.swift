@@ -35,7 +35,7 @@ class CommitsViewModel: BaseViewModel {
             print("Error: Couldn't decode data into CommitDataModel")
             
             self.error = ErrorModel(errorType: .json, statusCode: 0, message: "Error: Couldn't decode data into CommitDataModel")
-            self.failure(responseData: nil, statusCode: 0)
+            self.failure(error: self.error, responseData: nil, statusCode: 0)
             
             return
         }
@@ -45,10 +45,10 @@ class CommitsViewModel: BaseViewModel {
         self.delegate.didGetDataSuccessfully()
     }
     
-    override func failure(responseData: Data?, statusCode: Int) {
+    override func failure(error: ErrorModel, responseData: Data?, statusCode: Int) {
         print("FAILED COMMIT VM (\(statusCode): \(self.repoName)")
         
-        self.delegate.didFailGettingData(self.error)
+        self.delegate.didFailGettingData(error)
     }
     
     override func displayData() {
