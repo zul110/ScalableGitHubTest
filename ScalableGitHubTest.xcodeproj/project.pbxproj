@@ -9,21 +9,49 @@
 /* Begin PBXBuildFile section */
 		4B852B34A79732953C17CB9B /* Pods_ScalableGitHubTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2D5810E464EFB5AACCBFD6B /* Pods_ScalableGitHubTest.framework */; };
 		B7595AA920AE5B7A00972E1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AA820AE5B7A00972E1F /* AppDelegate.swift */; };
-		B7595AAB20AE5B7A00972E1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AAA20AE5B7A00972E1F /* ViewController.swift */; };
+		B7595AAB20AE5B7A00972E1F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AAA20AE5B7A00972E1F /* MainViewController.swift */; };
 		B7595AAE20AE5B7A00972E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7595AAC20AE5B7A00972E1F /* Main.storyboard */; };
 		B7595AB020AE5B7B00972E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7595AAF20AE5B7B00972E1F /* Assets.xcassets */; };
 		B7595AB320AE5B7B00972E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7595AB120AE5B7B00972E1F /* LaunchScreen.storyboard */; };
+		B7595AC320AE5D9800972E1F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AC220AE5D9800972E1F /* BaseViewModel.swift */; };
+		B7595AC620AE5DA900972E1F /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AC520AE5DA900972E1F /* ReposViewModel.swift */; };
+		B7595ACA20AE5DC600972E1F /* RepoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AC920AE5DC600972E1F /* RepoModel.swift */; };
+		B7595ACC20AE5DD600972E1F /* OwnerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595ACB20AE5DD600972E1F /* OwnerModel.swift */; };
+		B7595ACE20AE5DE100972E1F /* LicenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595ACD20AE5DE100972E1F /* LicenseModel.swift */; };
+		B7595AD020AE5DF000972E1F /* CommitDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595ACF20AE5DF000972E1F /* CommitDataModel.swift */; };
+		B7595AD220AE5DF900972E1F /* CommitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AD120AE5DF900972E1F /* CommitModel.swift */; };
+		B7595AD420AE5E0500972E1F /* AuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AD320AE5E0500972E1F /* AuthorModel.swift */; };
+		B7595AD620AE5E0F00972E1F /* ParentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AD520AE5E0F00972E1F /* ParentModel.swift */; };
+		B7595AD820AE5E1C00972E1F /* CommitAuthorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AD720AE5E1C00972E1F /* CommitAuthorModel.swift */; };
+		B7595ADA20AE5E2800972E1F /* VerificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AD920AE5E2800972E1F /* VerificationModel.swift */; };
+		B7595ADC20AE5E3200972E1F /* TreeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595ADB20AE5E3200972E1F /* TreeModel.swift */; };
+		B7595ADE20AE5E3D00972E1F /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595ADD20AE5E3D00972E1F /* ErrorModel.swift */; };
+		B7595AE120AE5F3400972E1F /* ErrorTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE020AE5F3400972E1F /* ErrorTypeEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A2D5810E464EFB5AACCBFD6B /* Pods_ScalableGitHubTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScalableGitHubTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7595AA520AE5B7A00972E1F /* ScalableGitHubTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScalableGitHubTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7595AA820AE5B7A00972E1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B7595AAA20AE5B7A00972E1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7595AAA20AE5B7A00972E1F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B7595AAD20AE5B7A00972E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B7595AAF20AE5B7B00972E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7595AB220AE5B7B00972E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7595AB420AE5B7B00972E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7595AC220AE5D9800972E1F /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B7595AC520AE5DA900972E1F /* ReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		B7595AC920AE5DC600972E1F /* RepoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoModel.swift; sourceTree = "<group>"; };
+		B7595ACB20AE5DD600972E1F /* OwnerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerModel.swift; sourceTree = "<group>"; };
+		B7595ACD20AE5DE100972E1F /* LicenseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicenseModel.swift; sourceTree = "<group>"; };
+		B7595ACF20AE5DF000972E1F /* CommitDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitDataModel.swift; sourceTree = "<group>"; };
+		B7595AD120AE5DF900972E1F /* CommitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitModel.swift; sourceTree = "<group>"; };
+		B7595AD320AE5E0500972E1F /* AuthorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorModel.swift; sourceTree = "<group>"; };
+		B7595AD520AE5E0F00972E1F /* ParentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentModel.swift; sourceTree = "<group>"; };
+		B7595AD720AE5E1C00972E1F /* CommitAuthorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitAuthorModel.swift; sourceTree = "<group>"; };
+		B7595AD920AE5E2800972E1F /* VerificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationModel.swift; sourceTree = "<group>"; };
+		B7595ADB20AE5E3200972E1F /* TreeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeModel.swift; sourceTree = "<group>"; };
+		B7595ADD20AE5E3D00972E1F /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		B7595AE020AE5F3400972E1F /* ErrorTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTypeEnum.swift; sourceTree = "<group>"; };
 		D1654A794E8A8143CD7A977B /* Pods-ScalableGitHubTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8A9ABC37D6915F986FE112 /* Pods-ScalableGitHubTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,7 +123,7 @@
 		B7595ABB20AE5BBB00972E1F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B7595AAA20AE5B7A00972E1F /* ViewController.swift */,
+				B7595AC020AE5D6900972E1F /* MainViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -103,6 +131,8 @@
 		B7595ABC20AE5BC500972E1F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B7595AC420AE5D9B00972E1F /* ReposViewModel */,
+				B7595AC220AE5D9800972E1F /* BaseViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -110,6 +140,17 @@
 		B7595ABD20AE5BCB00972E1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B7595AC920AE5DC600972E1F /* RepoModel.swift */,
+				B7595ACB20AE5DD600972E1F /* OwnerModel.swift */,
+				B7595ACD20AE5DE100972E1F /* LicenseModel.swift */,
+				B7595ACF20AE5DF000972E1F /* CommitDataModel.swift */,
+				B7595AD120AE5DF900972E1F /* CommitModel.swift */,
+				B7595AD320AE5E0500972E1F /* AuthorModel.swift */,
+				B7595AD520AE5E0F00972E1F /* ParentModel.swift */,
+				B7595AD720AE5E1C00972E1F /* CommitAuthorModel.swift */,
+				B7595AD920AE5E2800972E1F /* VerificationModel.swift */,
+				B7595ADB20AE5E3200972E1F /* TreeModel.swift */,
+				B7595ADD20AE5E3D00972E1F /* ErrorModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +158,7 @@
 		B7595ABE20AE5BD300972E1F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				B7595ADF20AE5F2500972E1F /* Enums */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -124,8 +166,56 @@
 		B7595ABF20AE5C4A00972E1F /* CustomControls */ = {
 			isa = PBXGroup;
 			children = (
+				B7595AC820AE5DB600972E1F /* TableViewCells */,
 			);
 			path = CustomControls;
+			sourceTree = "<group>";
+		};
+		B7595AC020AE5D6900972E1F /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B7595AC120AE5D7300972E1F /* Extensions */,
+				B7595AAA20AE5B7A00972E1F /* MainViewController.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		B7595AC120AE5D7300972E1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7595AC420AE5D9B00972E1F /* ReposViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B7595AC720AE5DAB00972E1F /* Extensions */,
+				B7595AC520AE5DA900972E1F /* ReposViewModel.swift */,
+			);
+			path = ReposViewModel;
+			sourceTree = "<group>";
+		};
+		B7595AC720AE5DAB00972E1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7595AC820AE5DB600972E1F /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		B7595ADF20AE5F2500972E1F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B7595AE020AE5F3400972E1F /* ErrorTypeEnum.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,8 +332,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7595AAB20AE5B7A00972E1F /* ViewController.swift in Sources */,
+				B7595ADE20AE5E3D00972E1F /* ErrorModel.swift in Sources */,
+				B7595AD220AE5DF900972E1F /* CommitModel.swift in Sources */,
+				B7595AC620AE5DA900972E1F /* ReposViewModel.swift in Sources */,
+				B7595AAB20AE5B7A00972E1F /* MainViewController.swift in Sources */,
+				B7595AD820AE5E1C00972E1F /* CommitAuthorModel.swift in Sources */,
 				B7595AA920AE5B7A00972E1F /* AppDelegate.swift in Sources */,
+				B7595AD620AE5E0F00972E1F /* ParentModel.swift in Sources */,
+				B7595ACC20AE5DD600972E1F /* OwnerModel.swift in Sources */,
+				B7595AD020AE5DF000972E1F /* CommitDataModel.swift in Sources */,
+				B7595AD420AE5E0500972E1F /* AuthorModel.swift in Sources */,
+				B7595ACA20AE5DC600972E1F /* RepoModel.swift in Sources */,
+				B7595ACE20AE5DE100972E1F /* LicenseModel.swift in Sources */,
+				B7595ADC20AE5E3200972E1F /* TreeModel.swift in Sources */,
+				B7595ADA20AE5E2800972E1F /* VerificationModel.swift in Sources */,
+				B7595AC320AE5D9800972E1F /* BaseViewModel.swift in Sources */,
+				B7595AE120AE5F3400972E1F /* ErrorTypeEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
