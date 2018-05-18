@@ -11,8 +11,6 @@ import UIKit
 extension ViewController: ViewModelDelegate {
     func didGetDataSuccessfully() {
         DispatchQueue.main.async {
-            //print(self.reposVM.repos)
-            
             self.reposTableView.dataSource = self
             self.reposTableView.delegate = self
             
