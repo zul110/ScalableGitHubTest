@@ -33,6 +33,9 @@
 		B7595AEA20AE672C00972E1F /* CommitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AE920AE672C00972E1F /* CommitsViewModel.swift */; };
 		B7595AED20AE69CA00972E1F /* RefreshControl_MainViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AEC20AE69CA00972E1F /* RefreshControl_MainViewControllerExtension.swift */; };
 		B7595AEF20AE6A1800972E1F /* TableViewDelegate+DataSource_MainViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AEE20AE6A1800972E1F /* TableViewDelegate+DataSource_MainViewControllerExtension.swift */; };
+		B7595AF620AE6EB000972E1F /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AF420AE6EB000972E1F /* RepoTableViewCell.swift */; };
+		B7595AF720AE6EB000972E1F /* RepoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7595AF520AE6EB000972E1F /* RepoTableViewCell.xib */; };
+		B7595AF920AE72A300972E1F /* CommitsViewModelDelegate_RepoTableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7595AF820AE72A300972E1F /* CommitsViewModelDelegate_RepoTableViewCellExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +67,9 @@
 		B7595AE920AE672C00972E1F /* CommitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModel.swift; sourceTree = "<group>"; };
 		B7595AEC20AE69CA00972E1F /* RefreshControl_MainViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshControl_MainViewControllerExtension.swift; sourceTree = "<group>"; };
 		B7595AEE20AE6A1800972E1F /* TableViewDelegate+DataSource_MainViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewDelegate+DataSource_MainViewControllerExtension.swift"; sourceTree = "<group>"; };
+		B7595AF420AE6EB000972E1F /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		B7595AF520AE6EB000972E1F /* RepoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepoTableViewCell.xib; sourceTree = "<group>"; };
+		B7595AF820AE72A300972E1F /* CommitsViewModelDelegate_RepoTableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitsViewModelDelegate_RepoTableViewCellExtension.swift; sourceTree = "<group>"; };
 		D1654A794E8A8143CD7A977B /* Pods-ScalableGitHubTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.debug.xcconfig"; sourceTree = "<group>"; };
 		DA8A9ABC37D6915F986FE112 /* Pods-ScalableGitHubTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalableGitHubTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScalableGitHubTest/Pods-ScalableGitHubTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +230,7 @@
 		B7595AC820AE5DB600972E1F /* TableViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				B7595AF020AE6E6900972E1F /* RepoTableViewCell */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -248,6 +255,24 @@
 		B7595AEB20AE672F00972E1F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7595AF020AE6E6900972E1F /* RepoTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B7595AF320AE6E8500972E1F /* Extensions */,
+				B7595AF420AE6EB000972E1F /* RepoTableViewCell.swift */,
+				B7595AF520AE6EB000972E1F /* RepoTableViewCell.xib */,
+			);
+			path = RepoTableViewCell;
+			sourceTree = "<group>";
+		};
+		B7595AF320AE6E8500972E1F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B7595AF820AE72A300972E1F /* CommitsViewModelDelegate_RepoTableViewCellExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -315,6 +340,7 @@
 				B7595AB320AE5B7B00972E1F /* LaunchScreen.storyboard in Resources */,
 				B7595AB020AE5B7B00972E1F /* Assets.xcassets in Resources */,
 				B7595AAE20AE5B7A00972E1F /* Main.storyboard in Resources */,
+				B7595AF720AE6EB000972E1F /* RepoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +394,9 @@
 			files = (
 				B7595ADE20AE5E3D00972E1F /* ErrorModel.swift in Sources */,
 				B7595AEA20AE672C00972E1F /* CommitsViewModel.swift in Sources */,
+				B7595AF620AE6EB000972E1F /* RepoTableViewCell.swift in Sources */,
 				B7595AED20AE69CA00972E1F /* RefreshControl_MainViewControllerExtension.swift in Sources */,
+				B7595AF920AE72A300972E1F /* CommitsViewModelDelegate_RepoTableViewCellExtension.swift in Sources */,
 				B7595AD220AE5DF900972E1F /* CommitModel.swift in Sources */,
 				B7595AC620AE5DA900972E1F /* ReposViewModel.swift in Sources */,
 				B7595AE320AE653300972E1F /* RealmManager_ReposViewModelExtension.swift in Sources */,

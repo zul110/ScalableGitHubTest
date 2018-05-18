@@ -14,7 +14,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "repoCell") else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "repoCell") as? RepoTableViewCell else {
             return UITableViewCell()
         }
         
@@ -22,7 +22,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let repo = self.reposVM.repos[index]
         
         if !repo.isInvalidated {
-            cell.textLabel?.text = repo.name!
+            cell.repo = repo
         }
         
         return cell
